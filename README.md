@@ -1,5 +1,5 @@
 # Power BI Sales Data Analysis
-Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts)
+Power BI Project 1: Sales Data Analysis (Covers Data Modeling Concepts)
 
 ## Overview
 This project analyzes sales data in Power BI and focuses on data modeling concepts, DAX calculations, and interactive dashboard design.
@@ -11,7 +11,9 @@ This project analyzes sales data in Power BI and focuses on data modeling concep
 ## Dataset
 The dataset used in this project is included in the repository as `Store+Data.xlsx`.
 
-###Preparation
-After loading the dataset in Power BI, the preparation phase started:
-It has been done by checking data types, the potential primary key, null values, and headers, Table names
-For example, since customer ID is the potential primary key, we can change it from (whole number) to (text) data type. Also in (Dim Promotion) Table,  we should convert (Price Reduction Type) column to numerical values, which is done by adding a new column.
+## Preparation
+After loading the dataset into Power BI, the preparation phase began by `Data Transformation`. This included checking data types, potential primary keys, null values, headers, and table names.
+
+For example, since `Customer ID` is a potential primary key, its data type was changed from **Whole Number** to **Text**. In addition, in the `Dim Promotion` table, the `Price Reduction Type` column was converted into numerical values by creating a new column.
+
+We can also fill nullvalues in Sheet3 table *which is renamed to *Fact table with join or calculations. Like (Net Sales = Total Sales - Discount Value)
