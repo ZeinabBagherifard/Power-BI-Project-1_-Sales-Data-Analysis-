@@ -47,6 +47,10 @@ A line chart was used to analyze sales trends over time. By using the drill feat
 
 
 ### 3. Show the relationship between sales & profit.
+A scatter plot was used to visualize the relationship between **Net Sales** and **Profit**. Scatter plots are useful for showing the relationship between two numerical variables and for identifying patterns or correlations in the data.
+
+![Sales and Profit Relationship](images/sales-profit.png
+
 
 
 
