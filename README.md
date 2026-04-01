@@ -43,6 +43,7 @@ To display the results, the visuals were filtered by **Product Name** using the 
 ### 2. How do sales trends vary over time (daily, monthly, quarterly, annually)?
 A line chart was used to analyze sales trends over time. By using the drill feature, the visual can show sales performance at different time levels, such as daily, monthly, quarterly, and annually.
 
+![Sales Trends](images/Sales Trends.png)
 
 
 
