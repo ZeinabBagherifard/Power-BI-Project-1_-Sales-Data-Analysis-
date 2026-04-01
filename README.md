@@ -46,8 +46,11 @@ A line chart was used to analyze sales trends over time. By using the drill feat
 ![Sales Trends](images/Sales-Trends.png)
 
 
+### 3. Show the relationship between sales & profit.
+
+
 
 ## Acknowledgment
-This project is based on the Power BI project covered in **Section 23** of the Udemy course **Complete Data Analyst Bootcamp From Basics To Advanced**.
+This project is based on **Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts)** from the Udemy course **Complete Data Analyst Bootcamp From Basics To Advanced**.
 
 The implementation, report building, and documentation in this repository were completed by me as part of my learning and portfolio work.
