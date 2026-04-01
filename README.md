@@ -28,7 +28,13 @@ The model consists of a central **Fact Table** connected to the **Dim Product**,
 ### Data Model
 ![Data Model](images/data-model.png)
 
-## Answering Questions:
-1) Top/Bottom 5 product by Sales/Profit/Quantity Sold
-we do not have profilt column, we have to create that in Fact table, assuming it is 10 percentage of (Net Sales)
-For that we should filter charts based on product name and instead of basic filtering, add top N in 
+## Business Questions
+
+### 1. Top/Bottom 5 Products by Sales, Profit, and Quantity Sold
+To answer this question, bar charts were created for the top and bottom 5 products based on **Sales**, **Quantity Sold**, and **Profit**.
+
+Since the original dataset did not contain a `Profit` column, a new custom column was created in the **Fact Table**, where profit was assumed to be **10% of Net Sales**.
+
+To display the results, the visuals were filtered by **Product Name** using the **Top N** filter instead of basic filtering.
+
+![Top and Bottom 5 Products](images/top-bottom-5-products.png)
