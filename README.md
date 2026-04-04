@@ -61,6 +61,11 @@ A map visual was used to show the distribution of **Net Sales** across different
 
 ![Net Sales by City](images/net-sales-by-city.png)
 
+### 6. Total number of orders
+To calculate the total number of orders, an index column was first added to the **Fact Table**. A card visual was then used to display the **distinct count** of that column, providing the total number of orders in the dataset.
+
+![Total Number of Orders](images/total-orders.png)
+
 
 ## Acknowledgment
 This project is based on **Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts)** from the Udemy course **Complete Data Analyst Bootcamp From Basics To Advanced**.
