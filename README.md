@@ -51,6 +51,10 @@ A scatter plot was used to visualize the relationship between **Net Sales** and 
 
 ![Sales and Profit Relationship](images/sales-profit.png)
 
+### 4. Average discount offered in each discount category
+A bar chart was used to compare the average discount value across different promotion categories. This helps identify which discount categories offer higher average discounts.
+
+![Average Discount by Promotion Categories](images/average-discount-by-category.png)
 
 
 
