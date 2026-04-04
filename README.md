@@ -56,6 +56,10 @@ A bar chart was used to compare the average discount value across different prom
 
 ![Average Discount by Promotion Categories](images/average-discount-by-category.png)
 
+### 5. How do sales vary across different cities?
+A map visual was used to show the distribution of **Net Sales** across different cities. The size of each bubble represents the sales value in that city, making it easier to compare geographical sales performance.
+
+![Net Sales by City](images/net-sales-by-city.png)
 
 
 ## Acknowledgment
