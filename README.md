@@ -66,6 +66,20 @@ To calculate the total number of orders, an index column was first added to the 
 
 ![Total Number of Orders](images/total-orders.png)
 
+### 7. Compare sales, profit, and quantity sold between two selected periods
+Two date slicers and separate bar visuals were used to compare **Sales**, **Profit**, and **Quantity Sold** across two user-selected periods. Using **Edit interactions**, each slicer was configured to affect only its corresponding visuals, allowing a side-by-side comparison between the two periods.
+
+![Period Comparison](images/period-comparison.png)
+
+### 8. Show order-level details with interactive visual filters
+A table visual was used to display order-level fields such as **Sales**, **Profit**, **Discount Value**, and **Net Sales**. Multiple slicers were added for filtering by dimensions such as **Product**, **Date**, **Customer**, and **Promotion Category**.
+
+To improve the filtering experience, a measure was used as a visual-level filter on slicers:
+
+```DAX
+Fact Measure = SUM('Fact Table'[Net Sales])
+![Period Comparison](images/net-sales.png)
+
 
 ## Acknowledgment
 This project is based on **Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts)** from the Udemy course **Complete Data Analyst Bootcamp From Basics To Advanced**.
