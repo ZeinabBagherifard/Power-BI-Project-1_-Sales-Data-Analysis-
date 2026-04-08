@@ -72,12 +72,11 @@ Two date slicers and separate bar visuals were used to compare **Sales**, **Prof
 ### 8. Show order-level details with interactive visual filters
 A table visual was used to display order-level fields such as **Sales**, **Profit**, **Discount Value**, and **Net Sales**. Multiple slicers were added for filtering by dimensions such as **Product**, **Date**, **Customer**, and **Promotion Category**.
 
-To improve the filtering experience, a measure was used as a visual-level filter on slicers:
+To improve the filtering experience, a measure named `Fact Measure` was used as a visual-level filter on the slicers.
 
-```DAX
-Fact Measure = SUM('Fact Table'[Net Sales])
+![Period Comparison](images/table.png)
 
-###Acknowledgment
+### Acknowledgment
 
 This project is based on Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts) from the Udemy course Complete Data Analyst Bootcamp From Basics To Advanced.
 
