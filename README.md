@@ -8,8 +8,9 @@ This project analyzes sales data in Power BI and focuses on data modeling concep
 - Power BI
 - Excel
 
-## Dataset
-The dataset used in this project is included in the repository as `Store+Data.xlsx`.
+## Project Files
+- Power BI report: `Sales Data Analysis (Covers Data Modeling Concepts).pbix`
+- Source dataset: `Store+Data.xlsx`
 
 ## Data Preparation
 After loading the dataset into Power BI, the data preparation phase began through data transformation. This included checking data types, potential primary keys, null values, headers, and table names.
