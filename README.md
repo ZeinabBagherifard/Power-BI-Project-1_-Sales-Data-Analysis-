@@ -16,12 +16,12 @@ After loading the dataset into Power BI, the data preparation phase began throug
 
 For example, since `Customer ID` is a potential primary key, its data type was changed from **Whole Number** to **Text**. In addition, in the `Dim Promotion` table, the `Price Reduction Type` column was converted into numerical values by creating a new column.
 
-Missing values in Sheet3, which was later renamed to the **Fact table**, can also be handled using calculations. For example:
+Missing values in Sheet3, which was later renamed to the **Fact Table**, were also handled using calculations. For example:
 
 `Net Sales = Total Sales - Discount Value`
 
 ## Data Modeling
-After the preparation phase, the data model and relationships between the Fact Table and Dimension tables were reviewed and organized into a star schema.
+After the preparation phase, the data model and relationships between the **Fact Table** and **Dimension Tables** were reviewed and organized into a star schema.
 
 The model consists of a central **Fact Table** connected to the **Dim Product**, **Dim Customers**, and **Dim Promotion** tables through one-to-many relationships. This structure helps reduce redundancy and makes analysis more efficient.
 
@@ -39,14 +39,12 @@ To display the results, the visuals were filtered by **Product Name** using the 
 
 ![Top and Bottom 5 Products](images/top-bottom-5-products.png)
 
-
 ### 2. How do sales trends vary over time (daily, monthly, quarterly, annually)?
 A line chart was used to analyze sales trends over time. By using the drill feature, the visual can show sales performance at different time levels, such as daily, monthly, quarterly, and annually.
 
-![Sales Trends](images/Sales-Trends.png)
+![Sales Trends](images/Sales Trends.png)
 
-
-### 3. Show the relationship between sales & profit.
+### 3. Show the relationship between sales and profit
 A scatter plot was used to visualize the relationship between **Net Sales** and **Profit**. Scatter plots are useful for showing the relationship between two numerical variables and for identifying patterns or correlations in the data.
 
 ![Sales and Profit Relationship](images/sales-profit.png)
@@ -66,8 +64,21 @@ To calculate the total number of orders, an index column was first added to the 
 
 ![Total Number of Orders](images/total-orders.png)
 
+### 7. Compare sales, profit, and quantity sold between two selected periods
+Two date slicers and separate bar visuals were used to compare **Sales**, **Profit**, and **Quantity Sold** across two user-selected periods. Using **Edit interactions**, each slicer was configured to affect only its corresponding visuals, allowing a side-by-side comparison between the two periods.
 
-## Acknowledgment
-This project is based on **Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts)** from the Udemy course **Complete Data Analyst Bootcamp From Basics To Advanced**.
+![Period Comparison](images/period-comparison.png)
+
+### 8. Show order-level details with interactive visual filters
+A table visual was used to display order-level fields such as **Sales**, **Profit**, **Discount Value**, and **Net Sales**. Multiple slicers were added for filtering by dimensions such as **Product**, **Date**, **Customer**, and **Promotion Category**.
+
+To improve the filtering experience, a measure was used as a visual-level filter on slicers:
+
+```DAX
+Fact Measure = SUM('Fact Table'[Net Sales])
+
+###Acknowledgment
+
+This project is based on Section 23: Power BI Project 1, Sales Data Analysis (Covers Data Modeling Concepts) from the Udemy course Complete Data Analyst Bootcamp From Basics To Advanced.
 
 The implementation, report building, and documentation in this repository were completed by me as part of my learning and portfolio work.
