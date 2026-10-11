@@ -17,7 +17,7 @@ After loading the dataset into Power BI, the data preparation phase began throug
 
 For example, since `Customer ID` is a potential primary key, its data type was changed from **Whole Number** to **Text**. In addition, in the `Dim Promotion` table, the `Price Reduction Type` column was converted into numerical values by creating a new column.
 
-Missing values in Sheet3, which was later renamed to the **Fact Table**, were also handled using calculations. For example:
+Missing values in Sheet3, which was later renamed to the **Fact Table**, were handled by merging queries to retrieve data from related tables and using calculations where needed. For example:
 
 `Net Sales = Total Sales - Discount Value`
 
