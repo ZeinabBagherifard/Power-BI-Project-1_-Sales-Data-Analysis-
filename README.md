@@ -65,8 +65,8 @@ To calculate the total number of orders, an index column was first added to the 
 
 ![Total Number of Orders](images/total-orders.png)
 
-### 7. Compare sales, profit, and quantity sold between two selected periods
-Two date slicers and separate bar visuals were used to compare **Sales**, **Profit**, and **Quantity Sold** across two user-selected periods. Using **Edit interactions**, each slicer was configured to affect only its corresponding visuals, allowing a side-by-side comparison between the two periods.
+### 7. Compare sales, profit, and quantity sold between two selected periods using date slicers
+**Two date slicers** and separate bar visuals were used to compare **Sales**, **Profit**, and **Quantity Sold** across two user-selected periods. Using **Edit interactions**, each slicer was configured to affect only its corresponding visuals, allowing a side-by-side comparison between the two periods.
 
 ![Period Comparison](images/period-comparison.png)
 
@@ -75,7 +75,7 @@ A table visual was used to display order-level fields such as **Sales**, **Profi
 
 To improve the filtering experience, a measure named `Fact Measure` was used as a visual-level filter on the slicers.
 
-![Period Comparison](images/table.png)
+![Order-Level Details](images/table.png)
 
 ### Acknowledgment
 
